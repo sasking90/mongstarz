@@ -352,17 +352,27 @@ export default function App() {
                 파트너에게는 <span className="text-white font-bold text-shadow-sm">실구매 전환</span>을 제공하는 혁신적인 광고 플랫폼입니다.
               </p>
 
-              {/* Mobile Buttons Side-by-Side */}
+              {/* Mobile Buttons Side-by-Side with Equal Size and Fixed Width for Desktop */}
               <div className="flex flex-row w-full sm:w-auto gap-3 lg:gap-5">
-                <a href="#" className="flex-1 sm:flex-none px-4 lg:px-8 py-4 bg-gradient-to-r from-emerald-400 to-teal-500 text-white rounded-2xl font-bold text-sm lg:text-lg hover:shadow-[0_0_20px_rgba(45,212,191,0.5)] transition-all flex items-center justify-center gap-2 lg:gap-3 border border-emerald-300/30 hover:-translate-y-1 group">
-                   <div className="bg-white/20 p-1 rounded-full group-hover:bg-white/30 transition-colors">
-                     <Play size={18} className="fill-white text-white lg:w-5 lg:h-5" />
+                <a 
+                  href="https://play.google.com" 
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-1 sm:w-48 px-4 py-4 rounded-2xl font-bold text-sm lg:text-lg transition-all flex items-center justify-center gap-2 lg:gap-3 group hover:-translate-y-1 shadow-[0_0_20px_rgba(45,212,191,0.3)] hover:shadow-[0_0_30px_rgba(45,212,191,0.6)] bg-gradient-to-r from-teal-300 to-emerald-400 text-slate-900 border border-teal-300/50"
+                >
+                   <div className="bg-slate-900/10 p-1 rounded-full transition-colors">
+                     <Play size={18} className="fill-current text-slate-900 lg:w-5 lg:h-5" />
                    </div>
                    <span>Android</span>
                 </a>
-                <a href="#" className="flex-1 sm:flex-none px-4 lg:px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-2xl font-bold text-sm lg:text-lg hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] transition-all flex items-center justify-center gap-2 lg:gap-3 border border-blue-300/30 hover:-translate-y-1 group">
-                  <div className="bg-white/20 p-1 rounded-full group-hover:bg-white/30 transition-colors">
-                     <Apple size={18} className="fill-white text-white mb-0.5 lg:w-5 lg:h-5" />
+                <a 
+                  href="https://apps.apple.com/kr" 
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-1 sm:w-48 px-4 py-4 rounded-2xl font-bold text-sm lg:text-lg transition-all flex items-center justify-center gap-2 lg:gap-3 group hover:-translate-y-1 shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.6)] bg-gradient-to-r from-indigo-500 to-violet-600 text-white border border-indigo-400/50"
+                >
+                  <div className="bg-white/20 p-1 rounded-full transition-colors">
+                     <Apple size={18} className="fill-current text-white mb-0.5 lg:w-5 lg:h-5" />
                   </div>
                   <span>iOS</span>
                 </a>
