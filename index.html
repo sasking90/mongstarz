@@ -12,12 +12,12 @@
           extend: {
             colors: {
               mong: {
-                yellow: '#FFE99A', // Logo yellow
-                red: '#E85C4A',    // Logo red/orange
-                blue: '#0047AB',   // Slide deck blue
+                yellow: '#FFE99A', 
+                red: '#E85C4A',    
+                blue: '#0047AB',   
                 dark: '#0F172A',
                 light: '#F8FAFC',
-                accent: '#38BDF8', // Light blue for highlights
+                accent: '#38BDF8', 
               },
               pastel: {
                 blue: '#E0F2FE',
@@ -91,21 +91,23 @@
           scrollbar-width: none;
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.4.2",
-    "recharts": "https://aistudiocdn.com/recharts@^2.15.1",
-    "@google/genai": "https://esm.run/@google/genai"
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
